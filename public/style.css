@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/ojv4ekx.css");
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,10 @@
 
 }
 
+
 body {
     height: 100%;
-    background-color: rgb(240, 240, 240);
-    font-family: "Roboto", Helvetica, sans-serif;
+    background-color: rgb(246, 246, 246);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,13 +18,14 @@ body {
     text-align: center;
 }
 
-.heading {
-    font-family: 'Eurostile LT Pro Unicode', sans-serif;
-
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .p-font {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 nav {
     display: flex;
@@ -101,20 +103,14 @@ nav>.links>.link>a:hover {
 }
 
 section.main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin-top: 60px;
 }
 
 section.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    position: relative;
+    gap: 15px;
+    color: #21272b;
 }
 
 section.hero>img {
@@ -129,9 +125,8 @@ section.hero>.hero-img {
 }
 
 section.hero>h1 {
-    font-family: Eurostile, sans-serif;
-    font-size: 4.5rem;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 
@@ -148,7 +143,6 @@ section#about {
     color: #21272B;
     height: 642px;
     gap: 25px;
-    font-family: "Mona Sans", sans-serif;
 }
 
 section#about>h2 {
@@ -157,37 +151,46 @@ section#about>h2 {
 }
 section#about>p {
     font-size: 1.25rem;
-    line-height: 1.25;
+    line-height: 1.5;
 }
-section.skills {
+section#skills>section.skills {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 1;
+
 }
+
 section#skills {
     background-color: rgb(249, 249, 249);
     box-shadow: 0 0 3px grey;
     border-radius: 10px;
-    width: 95%;
+    width: 90%;
     margin-top: -160px;
     z-index: 1;
 }
-section#skills >.skills > * {
+section#skills>.skills>* {
     flex: 1 1 50%;
 
 }
-section#skills >.skills> *:last-child {
+section#skills>section.skills>*:last-child {
     border: none;
 }
-div.size {
-    border-right: 1px solid grey;
+section#skills div.size {
+    border-right: 1px solid rgb(212, 212, 212);
     height: 400px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 50px 20px;
+    flex-direction: column;
+    padding: 70px 45px;
+}
+section#skills div.size .identifier {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffb300;
+}
+section#skills div.size>h2 {
+    font-weight: 800;
+    margin: 1.5rem 0;
 }
 nav.sticky {
     position: sticky;

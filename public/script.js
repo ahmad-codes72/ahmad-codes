@@ -31,7 +31,7 @@ function dynamicIslandRe() {
     }, 500);
 };
 
-setTimeout(dynamicIslandRe, 1500)
+setTimeout(dynamicIslandRe, 1000)
 
 setInterval(function () {
     const nav = document.querySelector('nav');
