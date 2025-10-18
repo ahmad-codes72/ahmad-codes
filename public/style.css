@@ -4,6 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
+}
+::-webkit-scrollbar {
+    background-color:#116bf1;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ffff00;
+    border-radius: 40px;
 }
 body {
   height: 100%;
@@ -123,7 +132,7 @@ section.hero > h1 {
   font-weight: 700;
 }
 section#about {
-  width: 98.8vw;
+  width: 99.4vw;
   /* full viewport width */
   background-color: #ffff00;
   border-top-left-radius: 20px;
@@ -193,6 +202,7 @@ section#projects {
 section#projects>h2 {
     margin-bottom: 1.5rem;
 }
+section#projects>div.projects
 nav.sticky {
   position: sticky;
   top: 20px;
