@@ -27,6 +27,12 @@ body {
 ul {
   list-style: none;
 }
+hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.2);
+}
 .flexbox {
   display: flex;
   align-items: center;
@@ -40,11 +46,17 @@ ul {
   font-size: 1.5rem;
   font-weight: 400;
 }
+.f-size-15 {
+  font-size: 1.5rem;
+}
 .sec-p-f-size {
     font-size: 1.25rem;
 }
-.skills-p-f-size {
+.p-f-size {
     font-size: 1.125rem;
+}
+.mb-15 {
+  margin-bottom: 1.5rem;
 }
 nav {
   display: flex;
@@ -132,7 +144,7 @@ section.hero > h1 {
   font-weight: 700;
 }
 section#about {
-  width: 99.4vw;
+  width: 100%;
   /* full viewport width */
   background-color: #ffff00;
   border-top-left-radius: 20px;
@@ -180,7 +192,6 @@ section#skills div.size .identifier {
   background-color: #ffb300;
 }
 section#skills div.size > h2 {
-  font-size: 1.5rem;
   margin: 1.5rem 0;
 }
 section#skills div.size > .c-orange {
@@ -196,13 +207,100 @@ section#skills div.size > ul:first-child {
 section#projects {
     display: flex;
     align-items: center;
+    width: 100%;
     flex-direction: column;
     padding: 9rem 4.5rem;
 }
-section#projects>h2 {
-    margin-bottom: 1.5rem;
+section#projects>div.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+  padding: 4rem 50px;
 }
-section#projects>div.projects
+section#projects>div.projects > * {
+  width: 35%;
+  position: relative;
+}
+section#projects>div.projects img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+section#projects>div.projects img:hover {
+  scale: 1.05;
+}
+section#projects>div.projects div.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  gap: 30px;
+  position: absolute;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #21272b;
+  color: white;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.7s ease;
+}
+section#projects>div.projects div.details:hover {
+  opacity: 1;
+}
+section#projects>div.projects div.details > p {
+  font-weight: 500;
+}
+section#projects>div.projects div.details > a {
+  color: white;
+  border: 2px solid #ffff00;
+  padding: 10px 20px;
+  font-weight: 400;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+section#projects>div.projects div.details > a:hover {
+  background-color: #ffff00;
+  color: #21272b;
+}
+section#cta-conversation {
+  margin: 6rem 0 9rem;
+  flex-direction: column;
+}
+section#cta-conversation > h2 {
+  font-size: 1.625rem;
+}
+section#cta-conversation > p {
+  line-height: 1.5;
+}
+section#cta-conversation > a {
+  margin-top: 2rem;
+  padding: 0.75em 2.25em;
+  text-decoration: none;
+  border: 2px solid #ffff00;
+  color: #fff000;
+  transition: 0.5s ease;
+  border-radius: 40px;
+  background: none;
+}
+section#cta-conversation > a:hover {
+  background-color: #fff000;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+section#testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 9rem 4.5rem;
+}
 nav.sticky {
   position: sticky;
   top: 20px;
@@ -213,6 +311,6 @@ ul.links.island {
   transform: scale(0.85);
 }
 nav.dynamic {
-  padding: 10px 40px;
-  max-width: 150px;
+  padding: 10px 50px;
+  max-width: 170px;
 }
