@@ -4,15 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
 }
 ::-webkit-scrollbar {
-    background-color:#116bf1;
-    width: 8px;
+  background-color: #116bf1;
+  width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #ffff00;
-    border-radius: 40px;
+  background-color: #ffff00;
+  border-radius: 40px;
 }
 body {
   height: 100%;
@@ -33,6 +32,15 @@ hr {
   border: none;
   background-color: rgba(128, 128, 128, 0.2);
 }
+
+span.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.75em;
+  height: 0.75em;
+  margin: 0 5px 0 -11px;
+}
 .flexbox {
   display: flex;
   align-items: center;
@@ -50,10 +58,10 @@ hr {
   font-size: 1.5rem;
 }
 .sec-p-f-size {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 .p-f-size {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 .mb-15 {
   margin-bottom: 1.5rem;
@@ -66,7 +74,6 @@ nav {
   box-shadow: 0 0 5px grey;
   border-radius: 60px;
   max-width: 700px;
-  gap: 100px;
   flex-wrap: nowrap;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.1);
@@ -75,6 +82,7 @@ nav {
   z-index: 1000;
 }
 nav.closing {
+  gap: 100px;
   transition: 0.8s cubic-bezier(0.78, -0.22, 0.45, 1.31);
 }
 @keyframes animate {
@@ -153,7 +161,6 @@ section#about {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 642px;
   gap: 25px;
 }
 section#about > p {
@@ -167,7 +174,7 @@ section#skills {
   background-color: rgb(249, 249, 249);
   box-shadow: 0 0 3px grey;
   border-radius: 10px;
-  width: 95%;
+  width: 94%;
   margin: -160px 0 1rem;
   z-index: 1;
 }
@@ -205,33 +212,36 @@ section#skills div.size > ul:first-child {
   margin-top: 0;
 }
 section#projects {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    padding: 9rem 4.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 9rem 4.5rem;
 }
-section#projects>div.projects {
+section#projects > div.projects {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 98%;
-  padding: 4rem 50px;
+  width: 100%;
+  padding: 4rem 0;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-section#projects>div.projects > * {
-  width: 35%;
+section#projects > div.projects > * {
+  width: 31.88%;
   position: relative;
 }
-section#projects>div.projects img {
+section#projects > div.projects img {
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  aspect-ratio: 3/2;
+  border-radius: 10px;
   transition: 0.3s ease;
 }
-section#projects>div.projects img:hover {
+section#projects > div.projects img:hover {
   scale: 1.05;
 }
-section#projects>div.projects div.details {
+section#projects > div.projects div.details {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,7 +249,7 @@ section#projects>div.projects div.details {
   padding: 0 40px;
   gap: 30px;
   position: absolute;
-  border-radius: 30px;
+  border-radius: 10px;
   width: 100%;
   height: 100%;
   background-color: #21272b;
@@ -249,13 +259,13 @@ section#projects>div.projects div.details {
   opacity: 0;
   transition: 0.7s ease;
 }
-section#projects>div.projects div.details:hover {
+section#projects > div.projects div.details:hover {
   opacity: 1;
 }
-section#projects>div.projects div.details > p {
+section#projects > div.projects div.details > p {
   font-weight: 500;
 }
-section#projects>div.projects div.details > a {
+section#projects > div.projects div.details > a {
   color: white;
   border: 2px solid #ffff00;
   padding: 10px 20px;
@@ -263,9 +273,36 @@ section#projects>div.projects div.details > a {
   border-radius: 40px;
   text-decoration: none;
   transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
-
-section#projects>div.projects div.details > a:hover {
+section#projects > div.projects div.details > a > span.icon {
+  width: 0.5em;
+  height: 0.5em;
+  display: flex;
+  margin-top: 2px;
+}
+section#projects > a.see-more {
+  margin-top: 2rem;
+  padding: 0.75em 2.25em;
+  text-decoration: none;
+  border: 2px solid #ffff00;
+  color: #fff000;
+  transition: 0.5s ease;
+  border-radius: 40px;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section#projects > a.see-more:hover {
+  background-color: #fff000;
+  color: #f6f6f6;
+  cursor: pointer;
+}
+section#projects > div.projects div.details > a:hover {
   background-color: #ffff00;
   color: #21272b;
 }
@@ -273,6 +310,7 @@ section#cta-conversation {
   margin: 6rem 0 9rem;
   flex-direction: column;
 }
+
 section#cta-conversation > h2 {
   font-size: 1.625rem;
 }
@@ -288,11 +326,18 @@ section#cta-conversation > a {
   transition: 0.5s ease;
   border-radius: 40px;
   background: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 section#cta-conversation > a:hover {
   background-color: #fff000;
   color: #f6f6f6;
   cursor: pointer;
+}
+section#cta-conversation > a > span.icon {
+  width: 1em;
+  height: 1em;
 }
 section#testimonials {
   display: flex;
@@ -300,6 +345,140 @@ section#testimonials {
   justify-content: center;
   flex-direction: column;
   padding: 9rem 4.5rem;
+}
+section#testimonials > div.nothing {
+  padding: 10rem 0 8rem;
+}
+section#testimonials > div.nothing > h2 {
+  font-size: 2.5rem;
+}
+section#cta-project {
+  background-color: #fff000;
+  width: 100%;
+  color: white;
+  padding: 5rem 1.5rem 2rem;
+}
+section#cta-project > section#start-project {
+  background-color: #113d67;
+  width: 98%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+}
+section#cta-project > section#start-project > div.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.5rem 1.25rem;
+  margin-top: -9rem;
+}
+section#cta-project > section#start-project > div.box > div.item {
+  display: flex;
+  justify-content: center;
+  padding: 0.75em;
+  width: 33.33%;
+}
+section#cta-project > section#start-project > div.box a {
+  padding: 0.5em 2em;
+  text-decoration: none;
+  border: 2px solid #ffff00;
+  color: white;
+  transition: 0.5s ease;
+  border-radius: 40px;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section#cta-project > section#start-project > div.box a:hover {
+  background-color: #fff000;
+  color: #113d67;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff000;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+footer > div.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer > div.box > img {
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid #116bf1;
+}
+footer > div.box > div.last-m {
+  padding: 2rem;
+  margin-bottom: 0.75rem;
+  width: 24rem;
+}
+footer > div.box > div.last-m > h3 {
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+footer > div.box > div.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 3.5rem;
+}
+
+footer > div.box > div.social-icons > div.icon {
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid #21272b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+
+}
+footer > div.box > div.social-icons > div.icon:hover {
+  background-color: #21272b;
+  color: #fff000;
+  cursor: pointer;
+}
+footer > div.box > div.social-icons > div.icon > i {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > div.box > div.social-icons > div.icon > i > a {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 200%;
+  height: 200%;
+  z-index: 2;
+  border-radius: 50%;
+}
+footer > p {
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+  font-family: "Playwrite US Modern", cursive;
+  color: #113d67;
+}
+footer > a {
+  color: #113d67;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+footer > a:hover {
+  text-decoration: underline;
 }
 nav.sticky {
   position: sticky;
@@ -311,6 +490,36 @@ ul.links.island {
   transform: scale(0.85);
 }
 nav.dynamic {
+  gap: 0;
   padding: 10px 50px;
   max-width: 170px;
+}
+@media (max-width: 1025px) and (min-width: 768px) {
+  nav.closing {
+    gap: 70px;
+  }
+  nav.dynamic {
+    max-width: 160px;
+  }
+  nav > .brand .brand-logo {
+    width: 60px;
+  }
+  nav > .links > .link > a {
+    font-size: 0.75rem;
+  }
+  section.hero > h1 {
+    font-size: 3rem;
+  }
+  .p-font {
+    font-size: 1.125rem;
+  }
+  section.hero > img {
+    width: 200px;
+  }
+  section#about {
+    padding: 75px 175px 15rem;
+  }
+  section#cta-conversation {
+    padding: 0 6rem;
+  }
 }

@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmad Codes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap"
@@ -23,7 +26,7 @@
             <li class="link"><a href="#about">About</a></li>
             <li class="link"><a href="#skills">Skills</a></li>
             <li class="link"><a href="#projects">Projects</a></li>
-            <li class="link"><a href="#contact">Contact</a></li>
+            <li class="link"><a href="#cta-conversation">Contact</a></li>
         </ul>
     </nav>
     <section class="main flexbox">
@@ -233,16 +236,18 @@
         <section id="skills">
             <section class="skills flexbox">
                 <div class="size">
-                    <div class="identifier flexbox">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="45" height="45">
-                                <!-- Customize here -->
-                                <path fill="#21272B"
-                                    d="M384 64c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32L64 448c-17.7 0-32-14.3-32-32L32 96c0-17.7 14.3-32 32-32l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM83.9 149.6c-5.8 6.7-5 16.8 1.7 22.6L183.4 256 85.6 339.9c-6.7 5.8-7.5 15.8-1.7 22.6s15.9 7.5 22.6 1.7l112-96c3.5-3 5.6-7.5 5.6-12.1s-2-9.1-5.6-12.1l-112-96c-6.7-5.8-16.8-5-22.6 1.7zM208 352c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0z">
-                                </path>
-                            </svg>
-                        </span>
-                    </div>
+                    <span class="fa-stack fa-2x"><svg class="svg-inline--fa fa-circle fa-stack-2x has-text-success"
+                            aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path>
+                        </svg><!-- <i class="fa-solid fa-circle fa-stack-2x has-text-success"></i> --><svg
+                            class="svg-inline--fa fa-square-terminal fa-stack-1x has-text-dark" aria-hidden="true"
+                            focusable="false" data-prefix="fal" data-icon="square-terminal" role="img"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                d="M384 64c17.7 0 32 14.3 32 32l0 320c0 17.7-14.3 32-32 32L64 448c-17.7 0-32-14.3-32-32L32 96c0-17.7 14.3-32 32-32l320 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM83.9 149.6c-5.8 6.7-5 16.8 1.7 22.6L183.4 256 85.6 339.9c-6.7 5.8-7.5 15.8-1.7 22.6s15.9 7.5 22.6 1.7l112-96c3.5-3 5.6-7.5 5.6-12.1s-2-9.1-5.6-12.1l-112-96c-6.7-5.8-16.8-5-22.6 1.7zM208 352c-8.8 0-16 7.2-16 16s7.2 16 16 16l160 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-160 0z">
+                            </path>
+                        </svg><!-- <i class="fa-light fa-square-terminal fa-stack-1x has-text-dark"></i> --></span>
                     <h2 class="heading-2 tk-eurostile f-size-15">Frontend Developer</h2>
                     <p class="p-font tk-europa p-f-size">
                         I develop websites from scratch and love turning ideas into
@@ -303,31 +308,119 @@
                         <a class="p-f-size tk-europa" href="https://ahmad-codes72.github.io/profile-card"
                             target="_blank">
                             <span>Visit website</span>
+                            <span class="icon"><svg class="svg-inline--fa fa-angle-right" aria-hidden="true"
+                                    focusable="false" data-prefix="fas" data-icon="angle-right" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                    </path>
+                                </svg><!-- <i class="fas fa-angle-right"></i> --></span>
                         </a>
                     </div>
                 </div>
             </div>
+            <a class="sec-p-f-size tk-europa see-more" href="https://github.com/ahmad-codes72">
+                <i class="fa-brands fa-github fa-xl"></i>
+                <span>See more on Github</span></a>
         </section>
         <hr />
         <section id="cta-conversation" class="flexbox">
             <h2 id="conversation-heading" class="heading-2 tk-eurostile mb-15">
                 Interested in collaborating with me?
             </h2>
-            <p class="sec-p-f-size tk-europa mb-15">
+            <p class="p-font sec-p-f-size tk-europa mb-15">
                 I’m open to taking on freelance product design projects and showcasing
                 my skills through quality remote work.
             </p>
             <a href="https://www.fiver.com/ahmad_codes72" class="sec-p-f-size tk-europa" target="_blank">
+                <span class="icon"><svg class="svg-inline--fa fa-message-lines" aria-hidden="true" focusable="false"
+                        data-prefix="far" data-icon="message-lines" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" data-fa-i2svg="">
+                        <path fill="currentColor"
+                            d="M208 416c0-26.5-21.5-48-48-48l-96 0c-8.8 0-16-7.2-16-16L48 64c0-8.8 7.2-16 16-16l384 0c8.8 0 16 7.2 16 16l0 288c0 8.8-7.2 16-16 16l-138.7 0c-10.4 0-20.5 3.4-28.8 9.6L208 432l0-16zm-.2 76.2l.2-.2 101.3-76L448 416c35.3 0 64-28.7 64-64l0-288c0-35.3-28.7-64-64-64L64 0C28.7 0 0 28.7 0 64L0 352c0 35.3 28.7 64 64 64l48 0 48 0 0 48 0 4 0 .3 0 6.4 0 21.3c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L202.7 496l5.1-3.8zM152 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l208 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-208 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-112 0z">
+                        </path>
+                    </svg><!-- <i class="fa-regular fa-message-lines"></i> --></span>
                 <span>Start a conversation</span>
             </a>
         </section>
         <hr />
         <section id="testimonials">
             <h2 class="tk-eurostile heading-2 mb-15">Testimonials</h2>
-            <p class="sec-p-f-size tk-europa mb-15">People I've worked with have said some nice things...</p>
+            <p class="p-font sec-p-f-size tk-europa mb-15">People I've worked with have said some nice things...</p>
+            <div class="nothing">
+                <h2 class="heading-2 tk-eurostile">Nothing to show here 😢</h2>
+            </div>
         </section>
+        <section id="cta-project">
+            <section id="start-project">
+                <div class="box">
+                    <div class="item">
+                        <h2 class="heading-2 tk-eurostile">Start a project</h2>
+                    </div>
+                    <div class="item">
+                        <p class="p-f-size tk-europa">Interested in working together? We should queue up a time to chat.
+                            I’ll buy the coffee.</p>
+                    </div>
+                    <div class="item">
+                        <a href="https://www.fiverr.com/ahmad_codes72" class="tk-europa sec-p-f-size">
+                            <span class="icon"><svg class="svg-inline--fa fa-hand-horns" aria-hidden="true"
+                                    focusable="false" data-prefix="far" data-icon="hand-horns" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M80 48c8.8 0 16 7.2 16 16l0 144 0 32-16 0c-5.5 0-10.8 .6-16 1.6L64 64c0-8.8 7.2-16 16-16zM16 64l0 208C6 285.4 0 302 0 320c0 0 0 0 0 0l0 24c0 92.8 75.2 168 168 168l48 0c92.8 0 168-75.2 168-168l0-56 0-32 0-128c0-35.3-28.7-64-64-64s-64 28.7-64 64l0 50c-5.1-1.3-10.5-2-16-2c-7.9 0-15.4 1.4-22.4 4c-10.4-21.3-32.3-36-57.6-36c-5.5 0-10.9 .7-16 2l0-82c0-35.3-28.7-64-64-64S16 28.7 16 64zM336 256l0 32 0 56c0 66.3-53.7 120-120 120l-48 0c-66.3 0-120-53.7-120-120l0-24s0 0 0 0c0-17.7 14.3-32 32-32l40 0 40 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0c15.1 0 29-5.3 40-14c11 8.8 24.9 14 40 14c35.3 0 64-28.7 64-64l0-48 0-16 0-112c0-8.8 7.2-16 16-16s16 7.2 16 16l0 128zM160 240l-16 0 0-32c0-8.8 7.2-16 16-16s16 7.2 16 16l0 32 0 2c-5.1-1.3-10.5-2-16-2zm96 16l0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-40 0-24c0-8.8 7.2-16 16-16s16 7.2 16 16l0 16z">
+                                    </path>
+                                </svg><!-- <i class="fa-regular fa-hand-horns"></i> --></span>
+                            <span>Let's do this</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <div class="box">
+                <img src="./assets/images/my-logo.png" alt="Ahmad codes logo">
+                <div class="last-m">
+                    <h3 class="tk-eurostile p-font">Living, learning, & leveling up one day at a time.</h3>
+                </div>
+                <div class="social-icons">
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook fa-xl">
+                            <a href="https://www.facebook.com/m.ahmad.chughtai72" target="_blank"></a>
+                        </i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-instagram fa-xl">
+                            <a href="https://www.instagram.com/ahmadcodes72" target="_blank"></a>
+                        </i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-snapchat fa-xl">
+                            <a href="https://www.snapchat.com/m.ahmad729" target="_blank"></a>
+                        </i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-tiktok fa-xl">
+                            <a href="https://www.tiktok.com/m.ahmad7295" target="_blank"></a>
+                        </i>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube fa-xl">
+                            <a href="https://www.youtube.com/@ahmad_codes729" target="_blank"></a>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <p class="sec-p-f-size">Designed and Developed by me &copy; 2025</p>
+            <a class="tk-europa sec-p-f-size" href="https://www.mattfarley.ca" target="_blank">Inspired from
+                Mattfarley</a>
+        </footer>
     </section>
+
     <script src="./assets/script.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+        data-id="ahmad_codes72" data-description="Support me on Buy me a coffee!"
+        data-message="Support me by giving donation" data-color="#ffff00" data-position="Right" data-x_margin="18"
+        data-y_margin="18"></script>
 </body>
 
 </html>
