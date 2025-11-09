@@ -228,7 +228,7 @@ section#projects > div.projects {
   flex-wrap: wrap;
 }
 section#projects > div.projects > * {
-  width: 31.88%;
+  width: 31%;
   position: relative;
 }
 section#projects > div.projects img {
@@ -246,7 +246,7 @@ section#projects > div.projects div.details {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 10px 40px;
   gap: 30px;
   position: absolute;
   border-radius: 10px;
@@ -311,9 +311,6 @@ section#cta-conversation {
   flex-direction: column;
 }
 
-section#cta-conversation > h2 {
-  font-size: 1.625rem;
-}
 section#cta-conversation > p {
   line-height: 1.5;
 }
@@ -347,7 +344,7 @@ section#testimonials {
   padding: 9rem 4.5rem;
 }
 section#testimonials > div.nothing {
-  padding: 10rem 0 8rem;
+  padding: 6rem 0 8rem;
 }
 section#testimonials > div.nothing > h2 {
   font-size: 2.5rem;
@@ -372,12 +369,12 @@ section#cta-project > section#start-project > div.box {
   align-items: center;
   justify-content: space-between;
   padding: 3.5rem 1.25rem;
+  gap: 24px;
   margin-top: -9rem;
 }
 section#cta-project > section#start-project > div.box > div.item {
   display: flex;
   justify-content: center;
-  padding: 0.75em;
   width: 33.33%;
 }
 section#cta-project > section#start-project > div.box a {
@@ -442,7 +439,6 @@ footer > div.box > div.social-icons > div.icon {
   justify-content: center;
   align-items: center;
   transition: 0.3s ease;
-
 }
 footer > div.box > div.social-icons > div.icon:hover {
   background-color: #21272b;
@@ -517,9 +513,39 @@ nav.dynamic {
     width: 200px;
   }
   section#about {
-    padding: 75px 175px 15rem;
+    padding: 75px 150px 16rem;
   }
   section#cta-conversation {
     padding: 0 6rem;
+  }
+  section#skills div.size {
+    height: 705px;
+  }
+  .heading-2 {
+    font-size: 1.5rem;
+  }
+  .f-size-15 {
+    font-size: 1.25rem;
+  }
+  section#testimonials > div.nothing > h2 {
+    font-size: 2rem;
+  }
+  .p-f-size {
+    font-size: 1rem;
+  }
+  footer > div.box > div.last-m > h3 {
+    font-size: 1.5rem;
+  }
+  .is-med {
+    font-size: 1rem;
+  }
+  section#cta-project > section#start-project > div.box {
+    padding: 3.5rem 1rem;
+  }
+  section#projects > div.projects > * {
+    width: 48%;
+  }
+  section#projects {
+    padding: 9rem 1.5rem;
   }
 }

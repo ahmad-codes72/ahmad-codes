@@ -30,3 +30,13 @@ function dynamicIslandRe() {
 
 setTimeout(dynamicIslandRe, 1000);
 
+setInterval(function () {
+  const nav = document.querySelector("nav");
+  const links = document.querySelector("ul.links");
+  if (
+    !nav.classList.contains("dynamic") &&
+    !links.classList.contains("island")
+  ) {
+    dynamicIsland();
+  }
+}, 10000);
