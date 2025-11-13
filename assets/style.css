@@ -649,6 +649,7 @@ nav.dynamic {
     flex-direction: column;
   }
   section#skills div.size {
+    border-right: none;
     border-bottom: 1px solid rgb(212, 212, 212);
   }
   section#projects {
