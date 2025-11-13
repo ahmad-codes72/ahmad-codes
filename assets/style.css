@@ -81,7 +81,30 @@ nav {
   transition: 0.9s cubic-bezier(1, -0.02, 0, 1);
   z-index: 1000;
 }
+nav > .sm-screen-nav {
+  display: flex;
+  align-items: center;
+}
+nav > .sm-screen-nav > div.menu-toggle {
+  display: none;
+}
+nav > .sm-screen-nav > div.menu-toggle > button.icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 5px grey;
+  padding: 12px 8px;
+  border-radius: 50%;
+  border: 5px solid #fff000;
+  transition: 0.5s ease;
+  transform: scale(0.85);
+}
+nav > .sm-screen-nav div.menu-toggle > button.icon:hover {
+  box-shadow: 0 0 15px grey;
+  border-color: #116bf1;
+  cursor: pointer;
+}
 nav.closing {
+  max-height: 600px;
   gap: 100px;
   transition: 0.8s cubic-bezier(0.78, -0.22, 0.45, 1.31);
 }
@@ -97,10 +120,10 @@ nav.closing {
 nav.animation {
   animation: animate 0.5s ease forwards;
 }
-nav > .brand {
+nav > .sm-screen-nav > .brand {
   cursor: pointer;
 }
-nav > .brand .brand-logo {
+nav > .sm-screen-nav .brand .brand-logo {
   width: 70px;
   border-radius: 50%;
   border: 5px solid #116bf1;
@@ -166,10 +189,6 @@ section#about {
 section#about > p {
   line-height: 1.5;
 }
-section#skills > section.skills {
-  position: relative;
-  z-index: 1;
-}
 section#skills {
   background-color: rgb(249, 249, 249);
   box-shadow: 0 0 3px grey;
@@ -178,6 +197,11 @@ section#skills {
   margin: -160px 0 1rem;
   z-index: 1;
 }
+section#skills > section.skills {
+  position: relative;
+  z-index: 1;
+}
+
 section#skills > .skills > * {
   flex: 1 1 50%;
 }
@@ -490,14 +514,14 @@ nav.dynamic {
   padding: 10px 50px;
   max-width: 170px;
 }
-@media (max-width: 1025px) and (min-width: 768px) {
+@media (max-width: 1025px) {
   nav.closing {
     gap: 70px;
   }
   nav.dynamic {
     max-width: 160px;
   }
-  nav > .brand .brand-logo {
+  nav > .sm-screen-nav > .brand .brand-logo {
     width: 60px;
   }
   nav > .links > .link > a {
@@ -547,5 +571,132 @@ nav.dynamic {
   }
   section#projects {
     padding: 9rem 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    width: 95%;
+    margin: 20px 50px 0;
+    flex-direction: column;
+    max-height: 74px;
+  }
+  nav.closing {
+    max-height: 74px;
+    border-radius: 60px;
+    gap: 0;
+    justify-content: space-between;
+  }
+  nav.sm-expand {
+    border-radius: 30px;
+    gap: 30px !important;
+    padding: 15px 20px;
+    max-height: 600px;
+  }
+  nav > .links.expand {
+    opacity: 1;
+    transform: scale(1);
+  }
+  nav > .sm-screen-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+  nav > .links {
+    display: flex;
+    opacity: 0;
+    transform: scale(0.85);
+    flex-direction: column;
+    width: 100%;
+  }
+  nav > .links > .link {
+    width: 100%;
+  }
+  nav > .links > .link > a {
+    display: block;
+  }
+  nav > .sm-screen-nav > div.menu-toggle {
+    display: block;
+  }
+  nav > .sm-screen-nav > div.menu-toggle > button.icon {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  nav > .sm-screen-nav > div.menu-toggle > button.icon.display {
+    opacity: 1;
+    transform: scale(1);
+  }
+  nav.dynamic {
+    padding: 10px 40px;
+    max-width: 130px;
+    max-height: 74px;
+    border-radius: 60px;
+  }
+  nav > .sm-screen-nav > .brand .brand-logo {
+    width: 50px;
+  }
+  section.hero > h1 {
+    font-size: 2.25rem;
+  }
+  .p-font {
+    font-size: 0.825rem;
+  }
+  section.hero > img {
+    width: 150px;
+  }
+  section#about {
+    padding: 75px 100px 16rem;
+  }
+  section#skills > section.skills {
+    flex-direction: column;
+  }
+  section#skills div.size {
+    border-bottom: 1px solid rgb(212, 212, 212);
+  }
+  section#projects {
+    padding: 9rem 1.5rem;
+  }
+  section#projects > div.projects > * {
+    width: 100%;
+  }
+  section#cta-conversation {
+    padding: 0 4rem;
+  }
+  section#cta-project > section#start-project > div.box {
+    flex-direction: column;
+  }
+  section#cta-project > section#start-project > div.box > div.item {
+    width: auto;
+  }
+  section#cta-project div.box > div.item.mt-10 {
+    margin-top: 10px;
+  }
+  section#cta-project div.box h2 {
+    font-size: 1.75rem;
+  }
+  section#cta-project div.box p {
+    font-size: 1rem;
+  }
+  section#cta-project div.box a {
+    font-size: 1.125rem;
+  }
+  .heading-2 {
+    font-size: 1.25rem;
+  }
+  .f-size-15 {
+    font-size: 1.125rem;
+  }
+  section#testimonials > div.nothing > h2 {
+    font-size: 1.75rem;
+  }
+  .p-f-size {
+    font-size: 0.7825rem;
+  }
+  footer > div.box > img {
+    width: 60px;
+  }
+  footer > div.box > div.last-m > h3 {
+    font-size: 1.25rem;
+  }
+  .is-med {
+    font-size: 0.85rem;
   }
 }

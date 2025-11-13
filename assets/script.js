@@ -12,7 +12,15 @@ window.addEventListener("scroll", () => {
 function dynamicIsland() {
   const nav = document.querySelector("nav");
   const links = document.querySelector("ul.links");
-  nav.classList.remove("closing");
+  const btn = document.querySelector("nav > .sm-screen-nav > div.menu-toggle > button.icon");
+  btn.classList.remove("display");
+  nav.classList.remove("sm-expand")
+  links.classList.remove("expand")
+
+  setTimeout(() => {
+    nav.classList.remove("closing");
+  }, 400);
+
   links.classList.add("island");
   nav.classList.add("dynamic");
 }
@@ -22,11 +30,23 @@ function dynamicIslandRe() {
   const links = document.querySelector("ul.links");
   nav.classList.add("closing");
   nav.classList.remove("dynamic");
+  const btn = document.querySelector("nav > .sm-screen-nav > div.menu-toggle > button.icon");
 
+  
   setTimeout(() => {
     links.classList.remove("island");
+    btn.classList.add("display");
   }, 500);
 }
+
+document.querySelector("nav > .sm-screen-nav > div.menu-toggle > button.icon").addEventListener("click", function() {
+  const nav = document.querySelector("nav")
+  const links = document.querySelector("ul.links");
+  nav.classList.toggle("sm-expand")
+  setTimeout(() => {
+    links.classList.toggle("expand")
+  }, 500);
+})
 
 setTimeout(dynamicIslandRe, 1000);
 
