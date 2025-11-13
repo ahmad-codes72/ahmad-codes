@@ -659,10 +659,10 @@ nav.dynamic {
     width: 100%;
   }
   section#projects > div.projects p.details-p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   section#projects > div.projects a.details-link {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   section#cta-conversation {
     padding: 0 4rem;
