@@ -658,6 +658,12 @@ nav.dynamic {
   section#projects > div.projects > * {
     width: 100%;
   }
+  section#projects > div.projects p.details-p {
+    font-size: 2.5rem;
+  }
+  section#projects > div.projects a.details-link {
+    font-size: 1.25rem;
+  }
   section#cta-conversation {
     padding: 0 4rem;
   }
