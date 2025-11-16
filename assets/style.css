@@ -5,6 +5,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+*::before, *::after {
+  box-sizing: border-box;
+}
 ::-webkit-scrollbar {
   background-color: #116bf1;
   width: 8px;
@@ -41,6 +44,7 @@ span.icon {
   height: 0.75em;
   margin: 0 5px 0 -11px;
 }
+
 .flexbox {
   display: flex;
   align-items: center;
@@ -175,7 +179,7 @@ section.hero > h1 {
   font-weight: 700;
 }
 section#about {
-  width: 100%;
+  max-width: 100%;
   /* full viewport width */
   background-color: #ffff00;
   border-top-left-radius: 20px;
@@ -576,7 +580,7 @@ nav.dynamic {
 @media (max-width: 767px) {
   nav {
     width: 95%;
-    margin: 20px 50px 0;
+    margin: 20px 0 0;
     flex-direction: column;
     max-height: 74px;
   }
@@ -705,5 +709,74 @@ nav.dynamic {
   }
   .is-med {
     font-size: 0.85rem;
+  }
+}
+@media (max-width: 575px) {
+  section.hero > h1 {
+    font-size: 1.5rem;
+  }
+  .p-font {
+    font-size: 0.575rem;
+  }
+  section.hero > img {
+    width: 125px;
+  }
+  section#about {
+    padding: 75px 50px 14rem;
+  }
+  .heading-2 {
+    font-size: 1.125rem;
+  }
+  section#skills {
+    width: 87.5%;
+  }
+  section#projects > div.projects div.details {
+    padding: 10px 20px;
+  }
+  section#projects > div.projects p.details-p {
+    font-size: 1.25rem;
+  }
+  section#projects > div.projects a.details-link {
+    font-size: 1rem;
+  }
+  section#cta-conversation {
+    padding: 0 2rem;
+  }
+  section#testimonials {
+    padding: 9rem 2rem;
+  }
+  section#testimonials > div.nothing {
+    padding: 3rem 0 4rem;
+  }
+  section#testimonials > div.nothing > h2 {
+    font-size: 1.25rem;
+  }
+  footer {
+    padding: 4rem 0.5rem;
+  }
+  footer > div.box > img {
+    width: 50px;
+  }
+  footer > div.box > div.last-m {
+    padding: 1rem;
+    width: 80%;
+  }
+  footer > div.box > div.last-m > h3 {
+    font-size: 1rem;
+  }
+  footer > div.box > div.social-icons {
+    gap: 18px;
+  }
+  footer > div.box > div.social-icons > div.icon {
+    padding: 10px;
+  }
+  footer > div.box > div.social-icons > div.icon > i > a {
+    top: -5px;
+    left: -5px;
+    width: 150%;
+    height: 150%;
+  }
+  .is-med {
+    font-size: 0.75rem;
   }
 }
