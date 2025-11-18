@@ -316,8 +316,8 @@ section#projects > a.see-more {
   margin-top: 2rem;
   padding: 0.75em 2.25em;
   text-decoration: none;
-  border: 2px solid #ffff00;
-  color: #fff000;
+  border: 2px solid #116bf1;
+  color: #116bf1;
   transition: 0.5s ease;
   border-radius: 40px;
   background: none;
@@ -326,7 +326,7 @@ section#projects > a.see-more {
   gap: 10px;
 }
 section#projects > a.see-more:hover {
-  background-color: #fff000;
+  background-color: #116bf1;
   color: #f6f6f6;
   cursor: pointer;
 }
@@ -346,8 +346,8 @@ section#cta-conversation > a {
   margin-top: 2rem;
   padding: 0.75em 2.25em;
   text-decoration: none;
-  border: 2px solid #ffff00;
-  color: #fff000;
+  border: 2px solid #116bf1;
+  color: #116bf1;
   transition: 0.5s ease;
   border-radius: 40px;
   background: none;
@@ -356,7 +356,7 @@ section#cta-conversation > a {
   gap: 10px;
 }
 section#cta-conversation > a:hover {
-  background-color: #fff000;
+  background-color: #116bf1;
   color: #f6f6f6;
   cursor: pointer;
 }
