@@ -217,7 +217,7 @@ section#skills div.size {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 710px;
+  height: 780px;
   padding: 70px 50px;
 }
 section#skills div.size .identifier {
@@ -549,7 +549,7 @@ nav.dynamic {
     padding: 0 6rem;
   }
   section#skills div.size {
-    height: 705px;
+    height: 750px;
   }
   .heading-2 {
     font-size: 1.5rem;
