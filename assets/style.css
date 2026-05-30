@@ -207,7 +207,7 @@ section#skills > section.skills {
 }
 
 section#skills > .skills > * {
-  flex: 1 1 50%;
+  flex: 1 1 33%;
 }
 section#skills > section.skills > *:last-child {
   border: none;
@@ -217,7 +217,7 @@ section#skills div.size {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 780px;
+  height: 820px;
   padding: 70px 50px;
 }
 section#skills div.size .identifier {
@@ -549,7 +549,8 @@ nav.dynamic {
     padding: 0 6rem;
   }
   section#skills div.size {
-    height: 750px;
+    padding: 70px 30px;
+    height: 800px;
   }
   .heading-2 {
     font-size: 1.5rem;
